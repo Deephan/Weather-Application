@@ -17,9 +17,9 @@ TO DO:
 
 Execution: 
 
-a) Go to <node source>/weatherapp folder.
+a) On your console, go to <node source>/weatherapp folder.
 
-b) Type node server.js. Node server listens on port 3000 by default.
+b) Type node server.js on your console. Node server listens on port 3000 by default.
 
 c) Go to the weatherapp package and open the weatherapp.html. Note that, this is still not the cleanest way to start the weatherapp. 
 
