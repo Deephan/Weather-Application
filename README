@@ -1,0 +1,26 @@
+A light weight weather application for displaying the weather details of few cities.
+
+REQUIREMENTS: node.js and express. 
+
+SETUP:
+
+i) Unpack weatherapp with your node server. (i.e <node server location>/weatherapp)
+
+
+TO DO: 
+
+(i) The site pane has to show the weather for the selected cities instead of displaying it on a new page. 
+
+(ii) Extend the functionality for displaying weather information for any city.
+
+(iii) Remove all hardcoded urls provided statically in the client file.
+
+Execution: 
+
+a) Go to <node source>/weatherapp folder.
+
+b) Type node server.js. Node server listens on port 3000 by default.
+
+c) Go to the weatherapp package and open the weatherapp.html. Note that, this is still not the cleanest way to start the weatherapp. 
+
+d) Click on the cities on the side pane for getting the weather info. Results are tabulated on a new page.
