@@ -1,9 +1,7 @@
 var express = require('express'); 
 var app = express();
-var fs = require('fs');
 
-// For now, all these location have been hardcoded. 
-
+// Route for displaying the weather of each city.
 app.get('/weather/:id', function(req, res) {
 	var http = require("https");
 	var request = require('request');
@@ -31,7 +29,7 @@ app.get('/weather/:id', function(req, res) {
 			for (var i = 0; i < fields.length; i++) 
 			    html += '<td align = "center"> '+jsonObject.current_observation[fields[i]]+"   </td>  ";
 			html += "</tr></tbody></table>";
-			res.send(jsonObject.current_observation["forecast_url"]);
+			res.send(html);
 		}
 	});
 });
