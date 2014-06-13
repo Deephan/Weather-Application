@@ -6,6 +6,8 @@ Go to http://nodejs.org and install NodeJS
 
 Go to http://expressjs.com and install Express
 
+Go to https://www.npmjs.org/package/ejs and install ejs
+
 **Run Locally**
 
 1. Unpack weatherapp with your node server. (i.e <node server location>/weatherapp)
