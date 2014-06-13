@@ -1,8 +1,6 @@
 var express = require('express'); 
 var app = express();
-var http = require('http');
 
-// For now, all these location have been hardcoded. 
 
 app.get('/weather/:id', function(req, res) {
     	var http = require("https");
@@ -37,7 +35,8 @@ app.get('/weather/:id', function(req, res) {
                 for (var i = 0; i < fields.length; i++) 
                     html += '<td align = "center"> '+jsonObject.current_observation[fields[i]]+"   </td>  ";
                 html += "</tr></tbody></table>";
-		        res.send(html);
+		        //res.send(html);
+		        res.send(jsonObject.current_observation["forecast_url"]);
 		    }
 		});
 	
