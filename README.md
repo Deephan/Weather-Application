@@ -10,7 +10,7 @@ Go to https://www.npmjs.org/package/ejs and install ejs
 
 **Run Locally**
 
-1. Unpack weatherapp with your node server. (i.e <node server location>/weatherapp)
+1. Unpack weatherapp within your node server. (i.e <node server location>/weatherapp)
 
 2. Run the app:
 
