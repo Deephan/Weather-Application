@@ -14,16 +14,13 @@ Go to http://expressjs.com and install Express
 
 `node server.js`
 
-Then navigate to `weatherapp.html` in the weatherapp package. 
+Then navigate to `http://localhost:3000/weather`. 
 
 **TO DO:** 
 
-1. The app starts from a static html page. This will be replaced with node.js entry point.
+1. All page styling is broken at this point. Since routing happens via node styling issues need to be taken care. 
 
-2. The site pane has to show the weather for the selected cities instead of displaying it on a new page. 
+2. Extend the functionality for displaying weather information for any city.
 
-3. Extend the functionality for displaying weather information for any city.
+3. Client app uses twitter bootstrap and it is the display page in the end still doesn't completely exploit all the features. Clean up to be done.
 
-4. Remove all hardcoded urls provided statically in the client file.
-
-5. Client app uses twitter bootstrap and it is the display page in the end still doesn't completely exploit all the features. Clean up to be done.
