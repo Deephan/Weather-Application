@@ -1,0 +1,22 @@
+<% include header %>
+
+
+<div id="wrapper">
+<!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand"><a href="#">Weather Application</a>
+      </li>
+      <% for (var i = 0; i < locations.length; i++)  { %>
+      <li><a href="http://localhost:3000/weather/<%= locations[i].city%>?city=<%= locations[i].city%>&state=<%= locations[i].state%>"><%= locations[i].city%>,<%= locations[i].state%></a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+  <div id="page-content-wrapper">
+    <div id="weather_reports"/>
+  </div>
+</div>
+
+    
+<% include footer %>

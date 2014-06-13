@@ -1,0 +1,26 @@
+<main role="main">
+  <div class="container">
+    <h3><%= location.city %></h3>
+    <table>
+    	<thead>
+    		<tr>
+    			<% for (var i = 0; i < fields.length; i++)  { %>
+    			<th align="center">	    			   
+					<%= fields[i] %>
+				 </th>
+				 <% } %>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+    			<% for (var i = 0; i < fields.length; i++)  { %>
+				<td align = "center">
+			     	<%= jsonObject.current_observation[fields[i]] %>
+				</td>
+				<% } %>
+			</tr>
+		</tbody>
+	</table>
+  </main>
+</div>
+

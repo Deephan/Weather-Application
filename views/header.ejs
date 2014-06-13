@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="/public/css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+	<%       
+
+        function showReports(){
+            debugger;
+            //var URL = 'http://localhost:4000/weather/1?city=Campbell&state=CA&callback=success';
+            $.ajax({
+                type: "POST",
+                crossDomain: true,
+                url: "http://localhost:3000/weathers/1?city=Campbell&state=CA",
+                jsonp: "callback",
+                dataType: "jsonp",
+                contentType: 'text/html',
+                success:function(data){
+                    //debugger;
+                    console.log(data);
+                    //var resp = $.parseJSON(data);
+                    //$("#weather_reports").append(data);
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    console.log(thrownError);
+                }
+            });
+            
+        }
+
+    %>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1><a href="/">Weather Application</a></h1>
+  </div>
+</header>
+
+</html>
